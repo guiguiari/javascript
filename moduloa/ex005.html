@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+    <style>
+        body {
+            font: normal 1.5em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num1 = prompt(`Digite um número`)
+        var num2 = prompt(`Digite outro número`)
+        var a = Number(num1) + Number(num2)
+        var b = a % Number(num1)
+        var c = Number(num1) * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e 
+
+        document.write(`a = ${num1} + ${num2} = ${a} <br>`)
+        document.write(`b = ${a} % ${num1} = ${b} <br>`)
+        document.write(`c = ${num1} * ${b} ** 2 = ${c} <br>`)
+        document.write(`d = 10 - ${a} / 2 = ${d} <br>`)
+        document.write(`e = 6 * 2 / ${d} = ${e} <br>`)
+        document.write(`f = ${b} % ${e}  + 4 / ${e}= ${f} <br>`)
+
+        // Simplificação de sintaxe
+        //n = n + 5 -> n += 5
+
+        //Incremento
+        // x = x + 1 -> x += 1 -> x++
+
+        //Decremento
+        // x = x - 1 -> x -= 1 -> x--
+    </script>    
+</body>
+</html>
