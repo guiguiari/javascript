@@ -29,15 +29,19 @@
 
     <script>
         function somar() {
-            var tn1 = document.getElementById('txtn1')
+            var tn1 = $('#txtn1').val();
+            //var tn1 = document.getElementById('txtn1')
             var tn2 = document.querySelector('input#txtn2')
             var res = document.getElementById('res')
-            var n1 = Number(tn1.value)
+            var n1 = Number(tn1)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
-
+            //res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+            $('#res').html(`A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`);
         }
     </script>
+    <script src="js/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
 </body>
 </html>
