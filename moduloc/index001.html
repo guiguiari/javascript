@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(182, 70, 70);
+            color: white;
+            font: normal 1em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">
+        Clique em mim!
+    </div>
+    <script>
+        /*
+        var corpo = window.document.body
+        var msg = window.document.getElementById('msg')
+        var p1 = document.getElementsByTagName('p')[1] //Aqui o 0 seleciona o primeiro paragrafo do documento
+
+        document.write('Está escrito assim: ' + p1.innerText) // Aqui está pegando o que está na var p1 e digitando o texto na tela através do .innerText
+
+        p1.style.color = 'blue' // Aqui está mudando o estilo do que está na var p1
+
+        corpo.style.background = 'black' 
+
+        document.write(p1.innerHTML) // Aqui está pegando o que está na var p1 e considerando o HTML, por exemplo a tag STRONG
+        
+        msg.style.color = 'green'
+        window.document.getElementById('msg').innerText = 'Olá!'
+        */
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+
+    </script>
+</body>
+</html>
