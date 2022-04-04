@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: 5px;
+    min-width: 5em;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 1.3em;
+}
+
+input[type=number] {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 1.3em;
+}
+
+input[type=button]:hover {
+    background-color: rgb(0, 160, 0);
+    cursor: pointer;
+}
+
+input[type=button] {
+    background-color: rgb(0, 185, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    height: 2.2em;
+    margin-left: 5px;
+}
