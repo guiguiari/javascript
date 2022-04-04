@@ -61,3 +61,55 @@ function media() {
     }
 
 }
+
+function distancia() {
+    var distancia1 = Number(document.getElementById('dist').value)
+
+    var achaDiv = document.getElementById('insereTxt')
+
+    var km = (distancia1 * 0.001).toFixed([3])
+    var hm = (distancia1 * 0.01).toFixed([2])
+    var dam = (distancia1 * 0.1).toFixed([1])
+    var dm = distancia1 * 10
+    var cm = distancia1 * 100
+    var mm = distancia1 * 1000
+
+    achaDiv.innerHTML = `<p>A medida de ${distancia1}m corresponde a:</p>
+    <p><strong>${km}</strong> km</p>
+    <p><strong>${hm}</strong> hm</p>
+    <p><strong>${dam}</strong> dam</p>
+    <p><strong>${dm}</strong> dm</p>
+    <p><strong>${cm}</strong> cm</p>
+    <p><strong>${mm}</strong> mm</p>
+    `
+}
+
+function tabuada() {
+    var num1 = Number(document.getElementById('num1').value)
+
+    var achaDiv = document.getElementById('insereTab')
+
+    var x1 = num1 * 1
+    var x2 = num1 * 2
+    var x3 = num1 * 3
+    var x4 = num1 * 4
+    var x5 = num1 * 5
+    var x6 = num1 * 6
+    var x7 = num1 * 7
+    var x8 = num1 * 8
+    var x9 = num1 * 9
+    var x10 = num1 * 10
+
+    achaDiv.innerHTML = `<p>A tabuada do número ${num1} é:</p>
+    <p>${num1} x 1 = <strong>${x1}</strong></p>
+    <p>${num1} x 2 = <strong>${x2}</strong></p>
+    <p>${num1} x 3 = <strong>${x3}</strong></p>
+    <p>${num1} x 4 = <strong>${x4}</strong></p>
+    <p>${num1} x 5 = <strong>${x5}</strong></p>
+    <p>${num1} x 6 = <strong>${x6}</strong></p>
+    <p>${num1} x 7 = <strong>${x7}</strong></p>
+    <p>${num1} x 8 = <strong>${x8}</strong></p>
+    <p>${num1} x 9 = <strong>${x9}</strong></p>
+    <p>${num1} x 10 = <strong>${x10}</strong></p>
+    `
+}
